@@ -1,0 +1,254 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CDRC LAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="journal.css">
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <img src="images/CDRC_logo.jpg" alt="CDRC Logo">
+        </div>
+        <div class="container2">
+            <img src="images/EMC2_logo.jpg" alt="EMC2 Logo">
+        </div>
+        <div class="container3">
+          <img src="images/logo-light.gif" alt="">
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: larger;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownPeople" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPeople">
+                        <a class="dropdown-item" href="faculty.html">Faculty</a>
+                        <a class="dropdown-item" href="advisory.html">Advisory Board</a>
+                        <a class="dropdown-item" href="alumni.html">CDRC Alumni</a>
+                        <a class="dropdown-item" href="research_engg.html">Research Engineer</a>
+                        <a class="dropdown-item" href="phd.html">PhD Scholars</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownResearch" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownResearch">
+                        <a class="dropdown-item" href="hardware.html">List of Hardware</a>
+                        <a class="dropdown-item" href="software.html">List of Software</a>
+                        <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownCollaborations" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collaborations & <br>Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCollaborations">
+                        <a class="dropdown-item" href="industrial_collab.html">Industrial Collaborations</a>
+                        <a class="dropdown-item" href="academic_collab.html">Academic Collaborations</a>
+                        <a class="dropdown-item" href="#">Power Systems</a>
+                        <a class="dropdown-item" href="#">Control Systems</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownActivities" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activities</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownActivities">
+                        <!-- Technical Dropdown -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Technical</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="robo_workshop.html" class="dropdown-item">Robotics Workshop</a></li>
+                            </ul>
+                        </li>
+                        <!-- Non-Technical Dropdown -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Non-Technical</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="get_together.html" class="dropdown-item">GetTogether</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownPublications" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPublications">
+                        <a class="dropdown-item" href="books.html">Books</a>
+                        <a class="dropdown-item" href="conference.html">Conference</a>
+                        <a class="dropdown-item" href="journal.html">Journal Papers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownGallery" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownGallery">
+                        <a class="dropdown-item" href="#">FDP/Workshops</a>
+                        <a class="dropdown-item" href="#">Trips and Other</a>
+                        <a class="dropdown-item" href="#">Conference</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="museum.html">Museum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://sites.google.com/ee.vjti.ac.in/mr-vijay-sonavane/pnc-issues">PNC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://sites.google.com/ee.vjti.ac.in/actual-virtual-machines-lab/home">Labs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Career & Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact_us.html">Contact Us</a>
+                </li>
+                </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <u><p class="h1">Journals Published</p></u>
+    </div>
+    <div class="main">
+        <ol>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&cstart=20&pagesize=80&citation_for_view=JVYImqMAAAAJ:K3LRdlH-MEoC">Septa, N, Wagh, S. Cooperative communication for safety message dissemination in
+                    unsaturated networks with varying contention windows. Wiley Online Library,  Int J
+                    Commun Syst. 2023; e5508. doi:10.1002/dac.5508</a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:738O_yMBCRsC">N. Septa and S. Wagh, &quot;Optimization of Contention Window and Relay Selection for
+                    Efficient Routing Using Fuzzy Logic Model,&quot; in IEEE Access, vol. 11, pp. 36993-37005,
+                    2023, doi: 10.1109/ACCESS.2023.3266512.</a>
+            </li>
+            <li>
+                <a href="https://link.springer.com/article/10.1007/s11277-023-10437-w">Septa, N. The Performance Analysis of 802.11p with Cooperative Communication and
+                    Dynamic Contention Window. Wireless Pers Commun (2023).
+                    https://doi.org/10.1007/s11277-023-10437-w</a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:EUQCXRtRnyEC">S. Shadab, J. Hozefa, K. Sonam, S. R. Wagh, N. M Singh, Gaussian process surrogate model
+                    for an effective life assessment of transformer considering model and measurement
+                    uncertainties, International Journal of Electrical Power &amp; Energy Systems, Volume 134,
+                    2022, 107401.</a>
+            </li>
+
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&sortby=pubdate&citation_for_view=JVYImqMAAAAJ:NhqRSupF_l8C">
+                  K. Sonam, S. Sutavani, S. R. Wagh, A. Yerudkar, C. Del Vecchio, and N. M. Singh, 
+                  “Optimal Control of Probabilistic Boolean Control Networks: A Scalable Infinite Horizon 
+                  Approach”, 
+                  International Journal of Robust and Nonlinear Control, Wiley Publications, accepted on 
+                  3 Nov 2021.
+                </a>
+              </li>
+              
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&cstart=20&pagesize=80&citation_for_view=JVYImqMAAAAJ:abG-DnoFyZgC">
+                K. Sonam, S. Sutavani, S. R. Wagh, N. M. Singh, "Optimal Control of Probabilistic Boolean
+                 Networks: An Information-Theoretic Approach" has been accepted for publication in IEEE Access
+                  Manuscript ID Access-2021-35868 on 3 Nov 2021
+            </a>
+            </li>
+            <li>
+                S. Kharade, S. R. Wagh, N. M. Singh  "Unified Holomorphic Embedding Power Flow for Hybrid AC-DC Systems" 
+                International Journal 
+                of Engineering Trends and Technology 69.7(2021):114-120. 
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&citation_for_view=JVYImqMAAAAJ:RYcK_YlVTxYC">
+                Sheikh, A., Kamuni, V., Urooj, A., Wagh, S., Singh, N. and Patel, D., 2019. Secured 
+                Energy Trading Using Byzantine-Based Blockchain Consensus. IEEE Access, 8, pp.8554-8571. 
+
+
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&cstart=20&pagesize=80&citation_for_view=JVYImqMAAAAJ:M3NEmzRMIkIC">
+                Bansode, P.A., Kosaraju, K.C., Wagh, S.R., Pasumarthy, R. and Singh, N.M., 2019. Accelerated distributed primal-dual dynamics using adaptive synchronization. IEEE Access, 7, pp.120424-120440. 
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:k_IJM867U9cC">
+                Monika, M., Rane, M., Wagh, S., Stanković, A.M. and Singh, N.M., 2019. Development of dynamic phasor based higher index model for performance enhancement of dual active bridge. Electric Power Systems Research, 168, pp.305-312. 
+
+
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:maZDTaKrznsC">
+                Rane, M. and Wagh, S., 2019. Mitigation of harmonics and unbalanced source voltage condition in standalone microgrid: positive sequence component and dynamic phasor based compensator with real-time approach. Heliyon, 5(2), p.e01178. 
+
+
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&cstart=80&citation_for_view=JVYImqMAAAAJ:_Qo2XoVZTnwC">
+                Deshpande, A., Bansode, P., Wagh, S.R. and Singh, N.M., 2018. Distributed self triggered control for asymptotic synchronization in inverter based microgrids. International Journal of Dynamics and Control, 6(3), pp.1150-1159. 
+
+
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:RHpTSmoSYBkC">
+                R. Meshram, S. Khade, S. Wagh, A. Stankovic and N. Singh, "Bond graph approach for Port- controlled Hamiltonian modeling for SST", Elsevier’s Journal of Electric Power Systems Research, 2017 
+
+            </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:r0BpntZqJG4C">
+
+                    Gupta, S., Kazi, F., Wagh, S. and Singh, N., 2018. Augmenting WAMPAC with machine learning tools for early warning and mitigation of blackout events. International Journal of Humanitarian Technology, 1(1), pp.83-100. 
+
+
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:R3hNpaxXUhUC">
+                    S Gupta, F Kazi, S Wagh, N Singh, "Analysis and prediction of vulnerability in smart power transmission system: A geometrical approach", International Journal of Electrical Power & Energy Systems 94, pp. 77-87, 2018 
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&cstart=80&citation_for_view=JVYImqMAAAAJ:_Qo2XoVZTnwC">
+                    A. Deshpande, P. Bansode, S. R. Wagh, and N. M. Singh,, "Distributed self triggered control for asymptotic synchronization in inverter based microgrids", International Journal of Dynamics and Control, pp. 1-10, 2017 
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:e5wmG9Sq2KIC">
+                    R. Meshram, S. Khade, M. Monika, S. Wagh, N. Singh and A. Stankovic, "Port-controlled phasor Hamiltonian modeling and IDA-PBC control of solid state transformer", IEEE Transaction on Control Systems Technology, issue: 99, 9 Nov 2017 DOI: https://doi.org/10.1109/TCST.2017.2761866	 
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:ZeXyd9-uunAC">
+                    P. Dey, R. Mehra, F. Kazi, S. Wagh, and N. Singh, "Impact of topology on the propagation of cascading failure in power grid, IEEE Transactions on Smart Grid, vol. 7, no. 4, pp. 1970-1978, July 2016 
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JVYImqMAAAAJ&pagesize=80&citation_for_view=JVYImqMAAAAJ:kNdYIx-mwKoC">
+                    Gupta, S., Kambli R., Wagh S. and Kazi, "Support-vector-machine-based proactive cascade prediction in smart grid using probabilistic framework, IEEE Transactions on Industrial Electronics, 62(4), 2478-2486, 2015 
+                </a>
+            </li>
+            <li>
+                <a href="">S Kulkarni, S Wagh, N Singh, "Challenges in Model Predictive Control Application for Transient Stability Improvement Using TCSC", International Review of Automatic Control (IREACO), 8 (2), 163-169, 2015 
+
+                </a>
+            </li>
+        </ol>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; CDRC, VJTI 2024 All rights reserved.<br>
+        Website Developed By: Prachi Anand Kesarkar
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
